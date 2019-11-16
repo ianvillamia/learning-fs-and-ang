@@ -1,1 +1,6 @@
 <button (click)="add()">ADD</button>
+<div *ngFor="let item of items">
+        {{item.timestamp.toDate()|date:'fullTime'}}
+        <button (click)="update(item)">Update</button>
+        <button (click)="delete(item)">Delete</button>
+</div>
